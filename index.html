@@ -10,31 +10,49 @@
 </head>
 <body>
     <header>
+        <div class="menu-topo">
+            <nav style="background-color: #e5e5e580"><br>
+                <a class="menu-topo" href="#">Início</a>
+                <a class="menu-topo" href="#">Sobre</a>
+                <a class="menu-topo" href="#">Programação</a>
+                <a class="menu-topo" href="#">Localização</a>
+                <a class="menu-topo" href=""><input type="button" class="botao" value="Inscrição"></a><br>
+            <br></nav><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="container helper notshow">
+            <h1 class="titulo-2">XXIII MARATONA SBC DE PROGRAMAÇÃO</h1><br><br>
+        </div>
         <div style="background-color: #f1c40fb3">
             <div class="container">
-                    <h1 class="titulo">XXIII MARATONA SBC <div>
+                    <h1 class="titulo">XXIII MARATONA SBC<div>
                         <img src="assets/images/menu.svg" class="menu" alt="menu hamburguer para ser aberto">
                         DE PROGRAMAÇÃO </div>
-                    </h1>  
+                    </h1>
             </div>
+           
         </div>    
         <br>
-        <div class="container">
+        <div class="container helper">
             <h2 class="subtitulo">Primeira fase: 15 de setembro</h2>
         </div>
         <br>
-        <div class="container">
+        <div class="container helper">
             <h3 class="subtitulo__2">Vilhena - RO</h3>
         </div>
         <br>
-        <div class="container">
+        <div class="container helper">
             <h3 class="subtitulo__3">IFRO - Instituto Federal de Rondônia</h3>
         </div>
         <br>
-        <div class="container">
+        <div class="disappear" class="container">
             <input type="button" class="botao" value="Inscrição">
         </div>
         <br>
+        <br class="notshow">
+        <br class="notshow">
+        <br class="notshow">
+        <br class="notshow">
+        <br class="notshow">
     </header>
 
     <section class="container">
@@ -42,9 +60,9 @@
         <h2 class="subtitulo-corpo">I Fase da Maratona de Programação da SBC – Etapa Regional</h2>
         <p class="texto-corpo">A Maratona de Programação é um evento da Sociedade Brasileira de Computação que existe desde o ano de 1996. A Maratona nasceu das competições regionais classificatórias para as finais mundiais do concurso de programação da ACM, o ACM International Collegiate Programming Contest, e é parte da regional sulamericana do concurso. Neste ano ocorre a 23a. edição da Maratona. <br><br><br> Ela se destina a alunos e alunas de cursos de graduação e início de pós-graduação na área de Computação e afins (Ciência da Computação, Engenharia de Computação, Sistemas de Informação, Matemática, etc). A competição promove nos estudantes a criatividade, a capacidade de trabalho em equipe, a busca de novas soluções de software e a habilidade de resolver problemas sob pressão. De ano para ano temos observado que as instituições e principalmente as grandes empresas da área têm valorizado os alunos que participam da Maratona. <br><br><br> Os times são compostos por três estudantes, que tentarão resolver durante 5 horas o maior número possível dos 10 ou mais problemas que são entregues no início da competição. Estes estudantes têm à sua disposição apenas um computador e material impresso (livros, listagens, manuais) para vencer a batalha contra o relógio e os problemas propostos. Os competidores do time devem colaborar para descobrir os problemas mais fáceis, projetar os testes, e construir as soluções que sejam aprovadas pelos juízes da competição. Alguns problemas requerem apenas compreensão, outros conhecimento de técnicas mais sofisticadas, e alguns podem ser realmente muito difíceis de serem resolvidos. <br><br><br> O julgamento é estrito. No início da competição os competidores recebem os problemas que devem ser resolvidos. Nos enunciados dos problemas constam exemplos dos dados dos problemas, mas eles não têm acesso às instâncias testadas pelos juízes. A cada submissão incorreta de um problema (ou seja, que deu resposta incorreta a uma das instâncias dos juízes) é atribuída uma penalidade de tempo. O time que conseguir resolver o maior número de problemas (no menor tempo acumulado com as penalidades, caso haja empate) é declarado o vencedor.</p>
     </section>
-
+    <br class="notshow"><br class="notshow">
     <section>
-        <h1 class="titulo-corpo">Programação</h1>
+        <h1 class="titulo-corpo">Programação</h1><br class="notshow"><br class="notshow"><br class="notshow">
         <table class="container">
             <tr>
                 <th>Data</th>
@@ -84,7 +102,12 @@
 
     <section>
         <h1 class="titulo-corpo">Localização</h1>
-        <img style="display: flex; margin: 0 auto;" src="assets/images/location.svg" alt="Localização do Ifro Campus Vilhena">
+        <div class="disappear">
+            <img style="display: flex; margin: 0 auto;" src="assets/images/location.svg" alt="Localização do Ifro Campus Vilhena">
+        </div>
+        <div class="notshow">
+            <img style="display: flex; margin: 0 auto;" src="assets/images/location-pc.svg" alt="localização ifro campus vha">
+        </div>
         <br><br><br>
     </section>
 
@@ -92,14 +115,23 @@
         <h1 class="titulo-corpo">Contato</h1>
         <br>
 
+        <div class="notshow-2">
+            <input style="float: right" class="mensagem" type="text" id="mensagem"><br>
+            <label style="float: right" class="rotulo" for="mensagem">Mensagem:</label>
+            
+        </div>
+
         <label class="rotulo" for="nome">Nome:</label>
         <input class="contato-texto" type="text" id="nome"><br><br><br>
         
         <label class="rotulo" for="email">Email:</label>
         <input class="contato-texto" type="text" id="email"><br><br><br>
-
-        <label class="rotulo" for="mensagem">Mensagem:</label>
-        <input class="mensagem" type="text" id="mensagem"><br><br>
+        
+        <div class="disappear-2">
+            <label class="rotulo" for="mensagem">Mensagem:</label>
+            <input class="mensagem" type="text" id="mensagem"><br><br>
+        </div>
+        
 
         <input type="button" id="enviar" value="Enviar" class="botao-enviar"><br><br><br><br>
     </section>
@@ -109,8 +141,9 @@
             <img class="logo-ifro" src="assets/images/ifro.svg" alt="logo ifro mobile">
 
             <h1 class="titulo-rodape">IFRO Campus Vilhena</h1>
-            <p class="endereco-rodape">Endereço: Rodovia BR-174, Km 3 S/n</p>
-            <p class="endereco-rodape">Zona Urbana, Vilhena - RO, 76980-000</p>
+            <p class="endereco-rodape disappear">Endereço: Rodovia BR-174, Km 3 S/n</p>
+            <p class="endereco-rodape disappear">Zona Urbana, Vilhena - RO, 76980-000</p>
+            <p class="endereco-rodape notshow">Endereço: Rodovia BR-174, Km 3 S/n Zona Urbana, Vilhena - RO, 76980-000</p>
             <p class="endereco-rodape">Telefone: (69)2101-0700</p><br><br><br><br>
         </div>
     </footer>
